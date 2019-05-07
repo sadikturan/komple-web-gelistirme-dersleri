@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Events</title>
+</head>
+
+<body>
+
+	<h1 id="title">Best free stock photos in one place.</h1>
+
+	<h3 id="sub-title">Search for free photos..</h3>
+
+	<button id="changeText">Change</button>
+	<button id="changeText2">Change</button>
+
+	<p>Lorem ipsum dolor</p>
+
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+
+	<script>
+		
+		var btn = document.querySelector('#changeText');
+		var btn2 = document.querySelector('#changeText2');
+
+		var p = document.querySelector('p');
+
+		btn.addEventListener('click', function() {
+			p.textContent = 'button clicked';
+		});
+
+		var h1 = document.querySelector('#title');
+
+		h1.addEventListener('click', changeColor);
+		btn2.addEventListener('click', changeColor);
+
+		function changeColor() {
+			h1.style.color = 'red';
+		}
+
+
+
+		var lis = document.querySelectorAll('li');
+
+		for (var i = 0; i < lis.length; i++) {
+			
+			lis[i].addEventListener('click', function() {	
+				this.style.color='blue';
+				this.style.textDecoration='underline';
+
+			});
+
+		}
+
+	</script>
+
+</body>
+
+</html>

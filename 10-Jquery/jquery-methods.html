@@ -1,0 +1,76 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        
+        <style>
+            .highlight
+            {
+                background-color: yellow;            
+            }
+            
+            .green
+            {
+                background-color: green;
+            }            
+         
+        </style>
+
+    </head>
+
+    <body>
+       
+        
+        <h1>JQuery Helper Methods</h1>
+        
+        <ul>
+            <li>Jquery Selectors</li>
+            <li>Jquery Methods</li>
+            <li>Jquery Animations</li>
+        </ul>
+        
+        <img src="img/koala.png" width="200">
+        
+        <input id="ad" type="text"  placeholder="Adınızı"/>
+        <input id="soyad" type="text" class="green" placeholder="Soyadınız"/>
+        <button id="btnKaydet" onclick="adsoyad();">Kaydet</button>
+        <script>
+          
+         console.log($("h1").text());            
+         console.log($("ul li").text());           
+         $("h1").text("Javascript");
+         
+            console.log($("input").val());  
+            
+            $("input").val("ssss");
+            
+            
+            $("img").attr("width","400");
+            
+            function adsoyad()
+            {
+                var ad=$("#ad").val();
+                var soyad=$("#soyad").val();
+                
+                console.log("adınız ve soyadınız :"+ad+" "+soyad);
+                
+                $("#ad").toggleClass("highlight");
+                $("#soyad").removeClass("green");                
+               
+                
+                
+            }
+            
+        </script>
+        
+    </body>
+
+
+
+
+
+</html>

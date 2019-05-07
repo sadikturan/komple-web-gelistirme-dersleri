@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Etiket Erişimi</title>
+	<style>
+		.kutu {
+			width: 120px;
+			height: 120px;
+			margin: 10px;
+			float: left;
+		}
+
+		#mavi {
+			background-color: blue;
+		}
+
+		#kirmizi {
+			background-color: red;
+		}
+
+		#sari {
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="mavi" class="kutu"></div>
+	<div id="kirmizi" class="kutu"></div>
+	<div id="sari" class="kutu"></div>
+
+	<script>
+
+		var isBlue = false;
+		var blue = document.getElementById('mavi');
+		
+		setInterval(function(){
+			
+			if(isBlue){
+				blue.style.background='green';	
+			}else{
+				blue.style.background='blue';
+			}		
+			isBlue=!isBlue;
+			
+		},1000);
+	</script>
+
+
+</body>
+
+</html>

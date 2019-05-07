@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Diziler - Uygulama</title>
+</head>
+
+<body>
+
+	<script>
+
+		/*	 
+			  
+			#1: Tüm modelleri yazdırınız.	 
+		  
+					 for(var i=0;i<models.length;i++){
+					 console.log(models[i]);
+					 }	
+			
+					 models.forEach(function(element){
+					 console.log(element);
+					 });
+		  
+			#2: Aşağıdaki görüntüyü console'da oluşturun.
+			
+			 // Toyota 2015 model ve 3 yaşında bir araçtır.
+			 // Mazda 2012 model ve 6 yaşında bir araçtır.
+			 // Mercedes 2016 model ve 2 yaşında bir araçtır.
+			 // Opel 2014 model ve 4 yaşında bir araçtır.	
+			 
+			 
+			for(var i=0; i<models.length;i++){
+				console.log(models[i] +' '+years[i]+' model ve '+(now-years[i])+' yaşında bir araçtır');
+				}	
+			 
+			#3: models ve years dizilerine eleman eklenebilsin.
+		
+		*/
+
+		var now = 2018;
+		var models = ['Toyota', 'Mazda', 'Mercedes', 'Opel'];
+		var years = ['2015', '2012', '2016', '2014'];
+
+		var model = prompt("Model giriniz : ");
+		var year = prompt("Model yılını giriniz :");
+
+		models.push(model);
+		years.push(year);
+
+
+		for (var i = 0; i < models.length; i++) {
+			console.log(models[i] + ' ' + years[i] + ' model ve ' + (now - years[i]) + ' yaşında bir araçtır');
+		}
+
+
+	</script>
+
+</body>
+
+</html>

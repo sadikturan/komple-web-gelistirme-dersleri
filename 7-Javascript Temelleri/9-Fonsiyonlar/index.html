@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+	
+	   /* function topla(a,b){
+		   return a+b;
+		}
+		
+		var sonuc = topla(10,20);		
+		
+		console.log(sonuc);
+		console.log(topla(40,50));
+	
+	*/
+		
+		var now = 2018;
+		
+		function yashesapla(yas){
+			return now-yas;
+		}
+		
+		var ahmet = yashesapla(1990);
+		var ali=yashesapla(1996);
+		
+		console.log(ahmet);
+		console.log(ali);
+		
+		
+		function emeklilikHesapla(ad,yas){
+			
+			var k_yas = yashesapla(yas);
+			var emeklilik = 65 - k_yas;
+			
+			if(emeklilik>0){
+					console.log(ad + ' '+emeklilik+' yıl sonra emekli olabilir');
+			}else{
+				console.log(ad + ' zaten '+ (emeklilik*-1) + ' yıl önce emekli olmuş');
+			}		
+					
+		}
+		
+		emeklilikHesapla('çınar',1998);
+		emeklilikHesapla('ali',1950);
+		
+		
+		
+	</script>
+	
+	
+</body>
+</html>

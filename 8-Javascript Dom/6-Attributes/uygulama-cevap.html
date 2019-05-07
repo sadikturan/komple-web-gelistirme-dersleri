@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Attributes - Uygulama</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="container mt-2">
+		<div class="row">
+			<div class="col-md-5">
+
+				<div class="card">
+					<img class="card-img-top" src="" alt="">
+					<div class="card-body">
+						<h5 class="card-title"></h5>
+						<a href="" class="btn btn-primary">Read More</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var models = [{
+				name: 'Mazda CX-3',
+				image: 'img/mazda.jpg',
+				link: 'http://www.arabalar.com.tr/mazda/cx-3/2017/1-5-sky-d-motion'
+			},
+			{
+				name: 'BMW 418d',
+				image: 'img/bmw.jpg',
+				link: 'http://www.arabalar.com.tr/bmw/4-serisi/2018/418d-2-0-gran-coupe'
+			},
+			{
+				name: 'Volvo S60',
+				image: 'img/volvo.jpg',
+				link: 'http://www.arabalar.com.tr/volvo/s60/2018/1-5-t3-advance'
+			}
+
+		];
+
+		setInterval(function() {
+			
+			var index = Math.floor(Math.random() * models.length);
+
+			console.log(index);
+
+			var img = document.querySelector('.card-img-top');
+			var title = document.querySelector('.card-title');
+			var a = document.querySelector('a');
+
+			img.setAttribute('src', models[index].image);
+			a.setAttribute('href', models[index].link);
+			title.textContent = models[index].name;
+			
+		}, 1000);
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        
+        <p>Sıfırdan Web Developer Eğitimi</p>      
+     
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        
+         <button id="toggle">Toggle</button>
+        
+        <script> 
+          
+            $(document).ready(function(){
+                
+                
+               
+                $("#hide").click(function(){
+                    
+                    $("p").hide(3000);
+                    
+                });
+                
+                $("#show").click(function(){
+                    
+                    $("p").show(1000,function(){
+                        alert("paragraf gösterildi");
+                    });
+                    
+                });
+                
+                $("#toggle").click(function(){
+                    
+                    $("p").toggle("slow");
+                    
+                });
+                
+                
+                
+            });
+            
+            
+        </script>
+        
+    </body>
+
+</html>

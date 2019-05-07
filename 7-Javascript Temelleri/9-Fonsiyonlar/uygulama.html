@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fonksiyonlar - Uygulama</title>
+</head>
+<body>
+	
+	
+	<script>
+	      
+		/*
+		
+		 #1 : Girilen bir sayının tek mi çift mi olduğunu hesaplayan fonksiyon yazınız.
+		 
+		 
+		 function tekcift(sayi){
+			
+			if(sayi%2==0){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		
+		if(tekcift(18)){
+			console.log('sayı çift')
+		}else{
+			console.log('sayı tek');
+		}
+			
+	     #2 : Girilen bir sayının faktöriyelini hesaplayan fonksiyon yazınız.
+		 
+		 
+		 // 4 => 4*3*2 =>24
+		function faktoriyel(sayi){
+			
+			var sonuc = 1;
+			
+			for(var i=2;i<=sayi;i++){
+				sonuc*=i;
+			}
+			
+			return sonuc;			
+		}
+		
+		
+		console.log(faktoriyel(1));
+			
+		 #3 : Kendisine gönderilen bir dizinin elemanlarını ekrana yazan fonksiyonu yazınız.
+		    		
+		*/	    	
+		
+		var modeller = ['opel','mazda','toyota'];
+		
+		function yazdir(dizi){
+			
+			dizi.forEach(function(item){
+				console.log(item);
+			});
+			
+		}
+		
+		yazdir(modeller);
+		yazdir(modeller);
+		
+		
+	</script>
+	
+	
+	
+</body>
+</html>

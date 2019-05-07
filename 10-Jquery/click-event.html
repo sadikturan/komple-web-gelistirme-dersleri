@@ -1,0 +1,53 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        
+        <style>
+        
+            .paragrafrenklendir
+            {
+                color: red;
+                font-size: 25px;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        
+        <p id="p1">Web Developer Eğitimi</p>
+        
+         <p id="p2">Web Developer Eğitimi</p>
+        
+         <p class="paragraf">Web Developer Eğitimi</p>
+        
+         <p class="paragraf">Web Developer Eğitimi</p>
+     
+        <script>
+            
+            
+            $(document).ready(function(){
+                    
+                $(".paragraf").click(function(){
+                    
+                    $(this).addClass("paragrafrenklendir");
+                    
+                });
+                
+                
+            });
+            
+          
+            
+            
+        </script>
+        
+    </body>
+
+</html>

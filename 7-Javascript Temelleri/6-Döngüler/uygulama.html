@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Döngüler - Uygulama</title>
+</head>
+
+<body>
+
+	<script>
+		/*
+					#1 : 10-100 arasındaki sayıları yazdırın.(for)
+					
+					for (var i=10; i<=100;i++){
+					   console.log(i);
+				    }
+					
+					for (var i=100; i>=10;i--){
+					   console.log(i);
+				    }
+							 
+					#2 : 10-100 arasındaki sayıları 5'er 5'er yazdırın(while)
+					
+						var i=10;
+				
+				        while(i<=100){
+					      console.log(i);
+					      i=i+5;
+				       }
+							 
+					#3 : Login Kontrolü :  Kullanıcı adı ve parola kontrolünden geçene kadar kullanıcı bilgilerini kullanıcıdan isteyin.
+							      
+					var k_username = "guest";
+				    var k_password = "12345";   
+						 
+				*/
+
+		var k_username = "guest";
+		var k_password = "12345";
+		var loggedin = false;
+
+
+		while (!loggedin) {
+
+			var username = prompt("kullanıcı adı :");
+			var password = prompt("parola : ");
+
+			if ((k_username == username) && (k_password == password)) {
+				console.log("giriş yapıldı");
+				loggedin=true;
+			} else {
+				console.log("hatalı kullanıcı adı ve ya parola");
+			}
+		}
+
+	</script>
+
+
+</body>
+
+</html>

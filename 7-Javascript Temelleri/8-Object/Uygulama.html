@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Object - Uygulama</title>
+</head>
+
+<body>
+
+
+	<script>
+		/*
+						
+						    #1: Bir personelin aşağıdaki bilgilerini object içinde saklayınız.
+							
+						      ** ad       : Ali
+							  ** soyad    : Yılmaz
+							  ** cinsiyet : Erkek
+					 		  ** telefon  : 0262333333
+					          ** adres    : izmit Kocaeli  	
+						      ** meslek   : bilgisayar mühendisi
+							  ** diller   : ingilizce,almanca
+							  ** hobiler  : sinema,spor,kitap okumak
+							  
+							#2: Bu personel kaç dil bilmektedir ?
+							#3: Bu personelin hobilerini alt alta yazdırınız.
+							#4: 3 elemanlı bir personel bilgi listesi oluşturunuz.
+						
+						*/
+
+		var ali = {
+			ad: 'Ali',
+			soyad: 'Yılmaz',
+			cinsiyet: 'Erkek',
+			telefon: '026233333',
+			adres: 'izmit Kocaeli',
+			meslek: 'bilgisayar mühendisi',
+			diller: ['ingilizce', 'almanca'],
+			hobiler: ['sinema', 'spor', 'kitap okumak']
+		};
+
+		console.log(ali.diller.length);
+
+		ali.hobiler.forEach(function(hobi) {
+			console.log(hobi);
+		});
+
+
+		var personel = [
+
+			{
+				ad: 'Ali',
+				soyad: 'Yılmaz',
+				cinsiyet: 'Erkek',
+				telefon: '026233333',
+				adres: 'izmit Kocaeli',
+				meslek: 'bilgisayar mühendisi',
+				diller: ['ingilizce', 'almanca'],
+				hobiler: ['sinema', 'spor', 'kitap okumak']
+			},
+			{
+				ad: 'Mehmet',
+				soyad: 'Yılmaz',
+				cinsiyet: 'Erkek',
+				telefon: '026233333',
+				adres: 'izmit Kocaeli',
+				meslek: 'elektronik mühendisi',
+				diller: ['ingilizce', 'almanca'],
+				hobiler: ['sinema', 'spor', 'kitap okumak']
+			},
+			{
+				ad: 'Pınar',
+				soyad: 'Yılmaz',
+				cinsiyet: 'Kadın',
+				telefon: '026233333',
+				adres: 'izmit Kocaeli',
+				meslek: 'Personel Müdürü',
+				diller: ['ingilizce', 'almanca','fransızca'],
+				hobiler: ['sinema', 'spor', 'kitap okumak']
+			}
+
+		];
+		
+		
+		personel.forEach(function(personel){
+			console.log('***********************');
+			
+			console.log(personel.ad+' '+personel.soyad);
+			
+			personel.diller.forEach(function(dil){
+				console.log(dil);
+			});
+			
+			console.log('***********************');
+			
+		});
+
+	</script>
+
+
+
+</body>
+
+</html>

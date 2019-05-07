@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>İçerik Güncelleme</title>
+	<style>
+	
+		.active{
+			color:red;
+			border:1px solid blue;
+			padding: 10px;
+		}
+		
+		.f45{
+			font-size: 45px;
+		}
+	</style>
+</head>
+<body>	
+	
+	<h1 id="title">Best free stock photos in one place.</h1>
+	
+	<h3 id="sub-title">Search for free photos..</h3>
+	
+	<img src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" width="500">
+	
+	<script>
+	
+	    var title = document.getElementById('title');
+		
+		title.classList.add('active');
+		title.classList.add('f45');
+		
+		console.log(title.classList);
+		
+		/*title.style.color='yellow';
+		title.style.fontSize='45px';
+		title.style.border='1px solid blue';
+		title.style.padding='10px';*/
+	
+	</script>
+	
+</body>
+</html>

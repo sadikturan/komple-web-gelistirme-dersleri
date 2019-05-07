@@ -1,0 +1,63 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        
+        <p>Sıfırdan Web Developer Eğitimi</p>      
+     
+        <button id="fadein">Fade In</button>
+        <button id="fadeout">Fade Out</button>
+        <button id="fadeto">Fade to</button>
+        
+         <button id="toggle">Toggle</button>
+        
+        <script> 
+          
+            $(document).ready(function(){
+                
+                
+               
+                $("#fadein").click(function(){
+                    
+                    $("p").fadeIn("slow");
+                    
+                });
+                
+                $("#fadeout").click(function(){
+                    
+                    $("p").fadeOut(1000,function(){
+                        alert("paragraf gösterildi");
+                    });
+                    
+                });
+                
+                $("#fadeto").click(function(){
+                    
+                    $("p").fadeTo("slow",0);
+                    
+                });
+                
+                $("#toggle").click(function(){
+                    
+                    $("p").fadeToggle("slow");
+                    
+                });
+                
+                
+                
+            });
+            
+            
+        </script>
+        
+    </body>
+
+</html>

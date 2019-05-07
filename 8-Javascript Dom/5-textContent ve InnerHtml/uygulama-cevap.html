@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>textContent ve InnerHtml</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container mt-2">
+		<div class="row">
+			<div class="col-md-4">
+
+				<ul class="list-group">
+					
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	
+	<script>
+
+		var models=[
+			         { name:'Mazda',selected:false},
+			         { name:'Toyota',selected:false},
+			         { name:'Volvo',selected:false},
+			         { name:'Renault',selected:false},
+			         { name:'Mercedes',selected:true},
+					 { name:'Bmw',selected:false},
+			         { name:'Kia',selected:false},
+			         { name:'Nissan',selected:false},
+		           ];
+		
+		var html =document.querySelector('.list-group');
+		
+		models.forEach(function(model){
+			var li ='';
+			
+			if(model.selected){
+			   li = '<li class="list-group-item active">'+model.name+'</li>';
+			}else{
+				li = '<li class="list-group-item">'+model.name+'</li>';
+			}
+			
+			html.innerHTML+=li;
+			
+		});
+		
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        
+        <style>
+          
+            #wrapper
+            {
+                width: 700px;
+                margin: 0 auto;
+            }
+            
+            body
+            {
+                font-size: 180%;
+            }
+            
+            input
+            {
+                padding: 15px;
+                font-size: 25px;
+                border-radius: 5px;
+                border:1px solid grey;
+                width: 520px;
+            }
+            
+            label
+            {
+                display: inline-block;
+                width: 170px;
+            }
+            
+            .form-group
+            {
+               margin-bottom: 15px;
+            }
+            
+            button
+            {
+                background-color: #4CAF50;
+                color: #fff;
+                padding: 14px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                border:none;
+                margin-top: 20px;
+                width: 100%;
+            }
+            
+            #error
+            {
+                color:red;
+                text-align: left;
+            }
+            
+            
+        </style>
+
+    </head>
+
+    <body>
+        
+        
+        <div id="wrapper">
+            
+            
+                <div id="error">
+           
+                </div>
+        
+                <div class="form-group">      
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="your email">
+                </div>
+
+                 <div class="form-group">      
+                    <label for="phone">Telefon</label>
+                    <input type="text" name="phone" id="phone" placeholder="phone">
+                </div>
+
+                <div class="form-group">      
+                    <label for="password">Parola</label>
+                    <input type="text" name="password" id="password" placeholder="email">
+                </div>
+
+                 <div class="form-group">      
+                    <label for="repassword">Parola Tekrar</label>
+                    <input type="text" name="repassword" id="repassword" placeholder="email tekrar">
+                </div>
+
+                <button id="btn">Kaydet</button>
+            
+      </div>
+        
+        <script>
+        
+            $(function(){
+                
+                function isEmail(email)
+                {
+                    var pattern = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+                    return pattern.test(email);
+                }
+                
+                $("#btn").click(function(){
+                    
+                     var errormessage="";
+                     $("#error").html("");                 
+                    
+                    if($("#email").val()==""){
+                       errormessage+="<p>email alanı zorunlu alan</p>";                        
+                    }
+                    
+                    if(isEmail($("#email").val())==false){
+                        errormessage+="<p>email alanı düzgün girilmedi.</p>";
+                    }
+                    
+                    if($.isNumeric($("#phone").val())==false){
+                       errormessage+="<p>telefon alanı düzgün girilmemiş</p>";                        
+                    }
+                    
+                    if($("#phone").val()==""){
+                       errormessage+="<p>telefon alanı zorunlu alan</p>";                        
+                    }
+                    
+                    if($("#password").val()==""){
+                       errormessage+="<p>password alanı zorunlu alan</p>";                        
+                    }
+                    
+                    if($("#password").val() != $("#repassword").val()){
+                           errormessage+="<p>parola alanları eşleşmiyor</p>";                        
+                    }                    
+                    
+                    if(errormessage!=""){
+                        $("#error").html(errormessage);
+                    }
+                        
+                    
+                    
+                });
+            
+            });
+            
+            
+        
+        </script>
+        
+    </body>
+
+</html>

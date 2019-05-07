@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>textContent ve InnerHtml</title>
+</head>
+<body>	
+	
+	<h1 id="title">Best free stock photos in one place.</h1>
+	
+	<h3 id="sub-title">Search for free photos..</h3>
+	
+	<p>Lorem ipsum dolor <strong>sit amet, </strong>consectetur.</p>
+	
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 2</li>
+	</ul>
+	
+	<img src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" width="500">
+	
+	<script>
+	
+		/*var p = document.getElementsByTagName('p')[0];
+		
+		p.textContent='Komple Uygulamalı Web Geliştime';
+		
+		console.log(p);	
+	
+		
+		var ul = document.querySelector('ul');
+		
+		ul.textContent='<li>liste</li>';		
+		
+		console.log(ul.textContent);*/
+		
+		
+		var p = document.getElementsByTagName('p')[0];
+		
+		p.innerHTML='<b>Komple</b> Uygulamalı Web Geliştime';
+		
+		var ul = document.querySelector('ul');
+		
+		ul.innerHTML='<li>item1</li><li>item2</li>';
+	  
+	
+	</script>
+	
+</body>
+</html>

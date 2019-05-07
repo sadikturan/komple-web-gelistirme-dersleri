@@ -1,0 +1,66 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <a href="#">link</a>
+        <h3 id="header">JQuery Dersleri</h3>
+        <ul id="liste">
+            <li class="item">JQuery Reference</li>
+            <li>Selectors <a href="#">link</a></li>
+            <li class="item">JQuery Plugins</li>
+        </ul> 
+      
+        <script>
+          
+            document.getElementById("header").style.color="red";
+            
+            $("#header").css("color","blue");
+            
+            $("#liste a").css("text-decoration","none");
+            $("a").css("text-decoration","none");
+            
+            
+            var styles={
+                color:"yellow",
+                fontSize:"20px",
+                border:"1px solid red"
+            }
+            
+            $("ul li").css(styles);     
+            
+            
+            var listeler = document.querySelectorAll("li");
+            
+            for(var i=0; i<listeler.length;i++)
+                {
+                    listeler[i].style.color="red";
+                }
+            
+            $("a").css({
+                color:"yellow",
+                fontSize:"20px",
+                border:"1px solid red"
+                
+            });
+            
+            $(".item").css({
+                display:"none"
+            });
+            
+        </script>
+        
+    </body>
+
+
+
+
+
+</html>

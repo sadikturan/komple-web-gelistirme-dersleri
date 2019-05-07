@@ -1,0 +1,62 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        
+        <style>
+            #box
+            {
+                position: absolute;
+                top: 50px;
+                left:10px;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        
+        <button id="animate">Animate</button>
+
+                
+        <div id="box">
+                Merhaba
+        </div>       
+        
+        
+        <script> 
+          
+            $(document).ready(function(){     
+                
+                $("#animate").mouseover(function(){
+                    
+                    var box=$("#box");
+                    
+                    box.animate(
+                       {
+                        left:'200px',
+                        width:'300px',  
+                        height:'300px' 
+                       },
+                        "slow"
+                   )
+                    
+                    box.animate({fontSize:'30px'},3000);
+                });
+           
+                
+            });
+            
+            
+        </script>
+        
+    </body>
+
+</html>
