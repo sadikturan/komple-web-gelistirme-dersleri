@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Forms</title>
+	<style>
+		/*
+		  input
+		
+		  color:#495057;
+		  background-color:#fff;
+		  border-color:#ced4da;  		  
+		  border-color:#80bdff;(focus)
+		  font-size:16px;
+		
+		  button
+		
+		  color:#fff;
+		  background-color:#007bff;
+		  border-color:#007bff;		  
+		  
+		  background-color:#0069d9;
+		  border-color:#0062cc;
+		*/
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 20px;
+		}
+
+		.form-group {
+			margin-bottom: 6px;
+		}
+
+		label {
+			display: inline-block;
+			margin-bottom: 4px;
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 7px 12px;
+			border: 1px solid #ced4da;
+			border-radius: 4px;
+		}
+
+		.form-control:focus {
+			border-color: #80bdff;
+			outline: 0;
+		}
+
+		.btn {
+			padding: 6px 12px;
+			border-radius: 4px;
+			color: #fff;
+			background-color: #007bff;
+			border: 1px solid #007bff;
+		}
+
+		.btn:hover {
+			background-color: #0069d9;
+			border: 1px solid #0062cc;
+		}
+
+		.col-25 {
+			float: left;
+			width: 25%;
+		}
+
+		.col-75 {
+			float: left;
+			width: 75%;
+		}
+		
+		.is-success{
+			border-color: #28a745;
+		}
+		
+		.is-error{
+			border-color: #dc3545;
+		}
+		
+		.is-warning{
+			border-color: #ffc107;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		#form2 {
+			background: #f2f2f2;
+			padding: 20px;
+			border-radius: 5px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div id="form1">
+
+		<div class="form-group">
+			<label for="fullName">FullName</label>
+			<input type="text" name="fullName" class="form-control is-success">
+		</div>
+
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" name="email" class="form-control is-error">
+		</div>
+
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea name="message" class="form-control is-warning"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label for="country">Country</label>
+			<select name="country" class="form-control">
+			<option value="Türkiye">Türkiye</option>
+			<option value="Almanya">Almanya</option>
+           </select>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Submit" class="btn">
+		</div>
+	</div>
+
+	<br>
+	<hr><br>
+
+	<div id="form2">
+
+		<div class="form-group clearfix">
+			<div class="col-25">
+				<label for="fullName">FullName</label>
+			</div>
+			<div class="col-75">
+				<input type="text" name="fullName" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group clearfix">
+			<div class="col-25">
+				<label for="email">Email</label>
+			</div>
+			<div class="col-75">
+				<input type="text" name="email" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group clearfix">
+			<div class="col-25">
+				<label for="message">Message</label>
+			</div>
+			<div class="col-75">
+				<textarea name="message" class="form-control"></textarea>
+			</div>
+		</div>
+
+		<div class="form-group clearfix">
+			<div class="col-25">
+				<label for="country">Country</label>
+			</div>
+			<div class="col-75">
+				<select name="country" class="form-control">
+					<option value="Türkiye">Türkiye</option>
+					<option value="Almanya">Almanya</option>
+      			</select>
+			</div>
+		</div>
+
+		<input type="submit" value="Submit" class="btn" style="margin-left: 25%;">
+	</div>
+
+
+</body>
+
+</html>

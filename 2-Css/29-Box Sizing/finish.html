@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Box Model</title>
+	<style>
+		
+		#box1 {
+			box-sizing: content-box;
+			width: 300px;
+			height: 100px;
+			background: green;	
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 10px solid black;
+		}
+
+		#box2 {
+			box-sizing: border-box;
+			width: 300px;
+			height: 100px;
+			background: gold;	
+			padding: 10px;
+			border: 10px solid black;
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div id="box1">
+		
+		300px + (10px*2) + (10px*2) => 340px
+		
+	</div>
+	<div id="box2">
+		
+		260px + (10px*2) + (10px*2) => 300px
+	</div>
+
+</body>
+
+</html>

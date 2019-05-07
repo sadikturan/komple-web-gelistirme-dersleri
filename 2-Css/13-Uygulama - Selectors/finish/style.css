@@ -1,0 +1,144 @@
+
+/* <body> font-size 14px ve background #f2f2f2 */
+
+body{
+	font-size: 14px;
+	background-color: #f2f2f2;
+}
+
+
+/* h1 etiketine gray border ve padding 5px ekleyin  */
+
+h1{
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+/* h2 etiketlerinin yazı rengini kırmızı yapınız */
+
+h2{
+	color: red;
+}
+
+/* h2 etiketlerinden sınıfı active olana yeşil border ekle */
+h2.active{
+	border: 1px solid green;
+}
+
+
+/* paragraf id'sine sahip olan etikete font kalınlığı verin*/
+p#paragraf{
+	font-weight: bold;
+}
+
+
+
+/* div içindeki h3 etiketlerine gold arkaplan ekle */ 
+
+div h3{
+	background-color: gold;
+}
+
+/*h1 den sonra gelen aynı seviyedeki tüm p arkaplan red olsun  */
+h1~p{
+	background-color: red;
+}
+
+
+/*div içindeki tüm p etiketlerinin arka planını yeşil yapın  */
+
+div>p{
+	background-color: green;
+}
+
+/*Tüm liste elemanlarına gray border ve margin-top:2px ekleyin.*/
+
+ul li{
+	border: 1px solid gray;
+	margin-top: 2px;
+}
+
+/* active sınıfına sahip tüm elemanlara gold arkaplan ekleyin..*/
+
+ul li.active{
+	background-color: gold;
+}
+
+/* liste elemanlarından ilkinin kelime aralığını arttır */
+ul li:first-child{
+	word-spacing: 5px;
+}
+
+
+/* liste elemanlarından en sondakinin harf aralığını arttır */
+
+ul li:last-child{
+	letter-spacing: 5px;
+}
+
+/* liste eleman index i tek olanların yazı rengini yeşil */
+
+ul li:nth-child(odd){
+	color: green;
+	font-weight: bold;
+}
+
+/* liste eleman index i çift olanların yazı rengini turuncu */
+
+ul li:nth-child(even){
+	color: orange;
+	font-weight: bold;
+}
+
+/*input nesnelerinden text ve password olanlara aşağıdaki css kodlarını uygulayın.
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+*/
+
+input[type="text"],input[type="password"]{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/*input nesnelerinden type i submit olana aşağıdaki css kodlarını uygulayın.
+
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+*/
+
+input[type="submit"]{
+	width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*submit butonuna hover olayı gerçekleştirğinde arkaplan rengini #45a049 yapınız */
+
+input[type="submit"]:hover{
+	background-color: #45a049;
+}
+
+/*input kutularından type i submit olayanların focus olayı gerçekleştiğinde arkaplan renklerini lightgoldenrodyellow yapın. */
+
+
+input[type="text"]:focus,input[type="password"]:focus{
+	background-color: lightgoldenrodyellow;
+}

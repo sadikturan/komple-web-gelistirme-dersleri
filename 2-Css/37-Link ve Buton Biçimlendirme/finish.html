@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<title>Styling Links</title>
+
+	<style>
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+
+		.btn {
+			padding: 12px 30px;
+			border: none;
+			text-decoration: none;
+			font-size: 16px;
+			display: inline-block;
+		}
+
+		.primary {
+			background-color: #007bff;
+			color: white;
+		}
+
+		.primary:hover {
+			opacity: 0.7;
+		}
+
+		.secondary {
+			background-color: #6c757d;
+			color: white;
+		}
+
+		.secondary:hover {
+			opacity: 0.7;
+		}
+
+		.success {
+			background-color: #28a745;
+			color: white;
+		}
+
+		.success:hover {
+			opacity: 0.7;
+		}
+
+		.danger {
+			background-color: #dc3545;
+			color: white;
+		}
+
+		.danger:hover {
+			opacity: 0.7;
+		}
+
+		.warning {
+			background-color: #ffc107;
+			color: white;
+		}
+
+		.warning:hover {
+			opacity: 0.7;
+		}
+
+
+		.btn-xs {
+			padding: 8px 15px;
+			font-size: 12px;
+		}
+
+		.btn-sm {
+			padding: 10px 22px;
+			font-size: 14px;
+		}
+
+		.btn-md {
+			padding: 12px 26px;
+			font-size: 16px;
+		}
+
+
+		.btn-lg {
+			padding: 16px 30px;
+			font-size: 16px;
+		}
+
+		.btn-bg {
+			font-size: 40px;
+		}
+
+		.btn-block {
+			display: block;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+		.rounded {
+			border-radius: 50%;
+		}
+
+
+		.primary-outline {
+			background-color: white;
+			color: #007bff;
+			border: 1px solid #007bff;
+		}
+
+		.primary-outline:hover {
+			color: white;
+			background-color: #007bff;
+			border: 1px solid #007bff;
+		}
+
+
+		.secondary-outline {
+			background-color: white;
+			color: #6c757d;
+			border: 1px solid #6c757d;
+		}
+
+		.secondary-outline:hover {
+			color: white;
+			background-color: #6c757d;
+			border: 1px solid #6c757d;
+		}
+
+		.success-outline {
+			background-color: white;
+			color: #28a745;
+			border: 1px solid #28a745;
+		}
+
+		.success-outline:hover {
+			color: white;
+			background-color: #28a745;
+			border: 1px solid #28a745;
+		}
+
+		.danger-outline {
+			background-color: white;
+			color: #dc3545;
+			border: 1px solid #dc3545;
+		}
+
+		.danger-outline:hover {
+			color: white;
+			background-color: #dc3545;
+			border: 1px solid #dc3545;
+		}
+
+		.warning-outline {
+			background-color: white;
+			color: #ffc107;
+			border: 1px solid #ffc107;
+		}
+
+		.warning-outline:hover {
+			color: white;
+			background-color: #ffc107;
+			border: 1px solid #ffc107;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<a href="/link1" class="btn primary">Primary</a>
+	<a href="/link2" class="btn secondary">Secondary2</a>
+	<a href="/link2" class="btn success">Success</a>
+	<a href="/link2" class="btn danger">Danger</a>
+	<a href="/link2" class="btn warning">Warning</a>
+
+	<br><br><br><br>
+
+
+	<a href="/link1" class="btn primary btn-xs">Primary</a>
+	<a href="/link2" class="btn secondary btn-sm">Secondary2</a>
+	<a href="/link2" class="btn success btn-md">Success</a>
+	<a href="/link2" class="btn danger btn-lg">Danger</a>
+	<a href="/link2" class="btn warning btn-bg">Warning</a>
+
+	<br><br><br><br>
+
+
+	<a href="/link1" class="btn primary btn-block">Primary</a>
+	<a href="/link2" class="btn secondary btn-block">Secondary2</a>
+
+	<a href="/link2" class="btn secondary rounded">50%</a>
+
+
+	<br><br><br><br>
+
+	<a href="/link1" class="btn primary-outline">
+		<i class="fas fa-home"></i>	Primary
+	</a>
+	<a href="/link2" class="btn secondary-outline">
+	    <i class="fas fa-trash-alt"></i>
+	       Secondary2
+	</a>
+	<a href="/link2" class="btn success-outline">
+	    <i class="fab fa-android"></i>
+	    Success
+	</a>
+	<a href="/link2" class="btn danger-outline">
+	    <i class="fab fa-angular"></i>
+	    Danger
+	</a>
+	<a href="/link2" class="btn warning-outline">
+	    <i class="fab fa-facebook-square"></i>
+	   Warning
+    </a>
+
+
+
+</body>
+
+</html>

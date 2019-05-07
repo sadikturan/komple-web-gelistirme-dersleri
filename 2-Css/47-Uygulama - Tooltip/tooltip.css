@@ -1,0 +1,100 @@
+body{
+	margin: 100px;
+}
+
+.border{
+	border: 1px solid rgb(0,0,0,.125);	
+	padding: 10px;
+	margin-right: 50px;	
+}
+
+.tooltip{
+	position: relative;
+}
+
+.tooltip .text{
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 0.3s;
+	
+	width: 120px;
+	background: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	z-index: 1;
+	
+	position: absolute;	
+}
+
+.top{
+	bottom: 120%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.top::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.bottom{
+	top: 120%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.bottom::after{
+	content: "";
+	position: absolute;
+	bottom:  100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+.right{
+	left: 105%;
+	top:3px;
+}
+
+.right::after{
+	content: "";
+	position: absolute;
+	top:  50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent;
+}
+
+.left{
+	right: 105%;
+	top:3px;
+}
+
+.left::after{
+	content: "";
+	position: absolute;
+	top:  50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .text{
+	visibility: visible;
+	opacity: 1;
+}

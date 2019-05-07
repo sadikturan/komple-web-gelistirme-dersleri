@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Background Image</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+		/*
+			rgba(230, 255, 230, 0.7)
+			rgba(102, 255, 102, 0.7)
+		
+		*/
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.header {
+			background-image: 
+				linear-gradient(to left bottom,
+					rgba(102, 255, 102, 0.7),
+					rgba(230, 255, 230, 0.7)),
+				    url(img/bg.jpeg);
+			height: 95vh;
+			background-size: cover;
+			background-position: top;
+			clip-path: polygon(0 0,100% 0,100% 100%, 0 87%);
+			position: relative;
+		}
+		
+		.heading {
+			text-transform: uppercase;
+			color: white;
+			position: absolute;
+			top:40%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%,-50%);
+		}
+		
+		.heading-main {
+			display: block;
+			font-size: 50px;
+			letter-spacing: 10px;
+		}
+		
+		.heading-sub {
+			display: block;
+			font-size: 30px;
+			letter-spacing: 5px;
+		}
+		
+		.logo-box {
+			position: absolute;
+			top: 30px;
+			left: 40px;
+		}
+		
+		.logo {
+			height: 50px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="logo-box">
+			<img class="logo" src="img/logo.png" alt="">
+		</div>
+
+		<h1 class="heading">
+			<span class="heading-main">Main Title</span>
+			<span class="heading-sub">Sub Title</span>
+		</h1>
+
+	</header>
+
+</body>
+
+</html>

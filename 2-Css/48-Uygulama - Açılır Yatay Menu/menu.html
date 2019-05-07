@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Yatay Menu</title>
+	<style>
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+		}
+
+		li {
+			display: inline-block;
+			float: left;
+			margin-right: 1px;
+		}
+
+
+		li a {
+			display: block;
+			background: #2f3036;
+			min-width: 140px;
+			color: #fff;
+			text-decoration: none;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		li a:hover {
+			background: #19C589;
+		}
+
+		li:hover ul a {
+			background: #f3f3f3;
+			color: black;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		li:hover ul a:hover {
+			background: #19C589;
+			color: #fff;
+		}
+
+		li ul li {
+			display: block;
+			float: none;
+		}
+
+		li ul li a {
+			text-align: left;
+			min-width: 100px;
+			padding: 0 20px;
+		}
+
+		li:hover a {
+			background: #19C589;
+		}
+
+		li ul {
+			display: none;
+		}
+
+		ul li a:hover+.hidden,
+		.hidden:hover {
+			display: block;
+		}
+
+		ul li:hover ul {
+			display: block;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<ul>
+		<li>
+			<a href="#">Anasayfa</a>
+		</li>
+		<li>
+			<a href="#">Hakkımızda</a>
+		</li>
+		<li>
+			<a href="#">Kurslar</a>
+			<ul class="hidden">
+				<li><a href="#">Komple Uygulamalı Web Geliştirme Eğitimi</a></li>
+				<li><a href="#">Web Programlama Eğitimi : Asp.net MVC</a></li>
+				<li><a href="#">C# Programlama Dili Eğitimi</a></li>
+			</ul>
+
+		</li>
+		<li>
+			<a href="#">Makale</a>
+		</li>
+		<li>
+			<a href="#">İletişim</a>
+		</li>
+
+
+	</ul>
+
+
+
+</body>
+
+</html>

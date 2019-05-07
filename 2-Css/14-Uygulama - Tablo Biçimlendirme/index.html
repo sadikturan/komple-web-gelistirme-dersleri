@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Table</title>
+	
+	<style>	
+		
+		table{
+			width: 100%;			
+			border-collapse: collapse;
+		}
+		
+		.table-blue th{
+			background-color: #2196F3;
+			color: white;
+		}
+		
+		.table-green th{
+			background-color: #4CAF50;
+			color: white;
+		}
+		
+		table th{
+			text-align: left;			
+		}
+		
+		table td,table th{
+			border: 1px solid #ddd;
+			padding: 6px;
+		}
+		
+		table tr:nth-child(even){
+			background-color: #f2f2f2;
+		}
+		
+		table tr:hover{
+			background-color: #ddd;
+		}
+	
+	</style>
+	
+</head>
+<body>		
+	
+	<table class="table-blue">
+	
+		<thead>		
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Price</th>
+			</tr>	
+		</thead>
+		<tbody>
+		
+			<tr>
+				<td>Product 1</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Product 2</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Product 3</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$50</td>
+			</tr>
+			<tr>
+				<td>Product 4</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Product 5</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$70</td>
+			</tr>
+			
+		</tbody>
+		
+		
+	</table>
+	
+	<hr>
+	
+	<table class="table-green">
+	
+		<thead>		
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Price</th>
+			</tr>	
+		</thead>
+		<tbody>
+		
+			<tr>
+				<td>Product 1</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Product 2</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Product 3</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$50</td>
+			</tr>
+			<tr>
+				<td>Product 4</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Product 5</td>
+				<td>Lorem ipsum dolor sit amet.</td>
+				<td>$70</td>
+			</tr>
+			
+		</tbody>
+		
+		
+	</table>
+	
+	
+</body>
+</html>

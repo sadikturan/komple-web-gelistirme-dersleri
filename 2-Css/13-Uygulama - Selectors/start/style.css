@@ -1,0 +1,54 @@
+
+/* <body> font-size 14px ve background #f2f2f2 */
+
+/* h1 etiketine gray border ve padding 5px ekleyin  */
+
+/* h2 etiketlerinin yazı rengini kırmızı yapınız */
+
+/* h2 etiketlerinden sınıfı active olana yeşil border ekle */
+
+/* paragraf id'sine sahip olan etikete font kalınlığı verin*/
+
+/* div içindeki h3 etiketlerine gold arkaplan ekle */ 
+
+/*h1 den sonra gelen aynı seviyedeki tüm p arkaplan red olsun  */
+
+/*div içindeki tüm p etiketlerinin arka planını yeşil yapın  */
+
+/*Tüm liste elemanlarına gray border ve margin-top:2px ekleyin.*/
+
+/* active sınıfına sahip tüm elemanlara gold arkaplan ekleyin..*/
+
+/* liste elemanlarından ilkinin kelime aralığını arttır */
+
+/* liste elemanlarından en sondakinin harf aralığını arttır */
+
+/* liste eleman index i tek olanların yazı rengini yeşil */
+
+/* liste eleman index i çift olanların yazı rengini turuncu */
+
+/*input nesnelerinden text ve password olanlara aşağıdaki css kodlarını uygulayın.
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+*/
+
+/*input nesnelerinden type i submit olana aşağıdaki css kodlarını uygulayın.
+
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+*/
+
+/*submit butonuna hover olayı gerçekleştirğinde arkaplan rengini #45a049 yapınız */
+
+/*input kutularından type i submit olayanların focus olayı gerçekleştiğinde arkaplan renklerini lightgoldenrodyellow yapın. */

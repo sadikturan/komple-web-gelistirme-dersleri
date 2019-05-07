@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Box Shadow</title>
+
+	<style>
+		.card {
+			width: 150px;
+			height: 150px;
+			background: blue;
+			-webkit-transition: width 2s, height 2s, background 1s;
+			transition: width 2s, height 2s, background 1s;
+			transition-delay: 1s;
+			margin-bottom: 10px;
+		}
+
+		.card:hover {
+			width: 250px;				
+		}
+		
+		#card1{
+			transition-timing-function: ease;
+		}
+		#card2{
+			transition-timing-function: linear;
+		}
+		#card3{
+			transition-timing-function: ease-in;
+		}
+		#card4{
+			transition-timing-function: ease-out;
+		}
+		#card5{
+			transition-timing-function: ease-in-out;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="card1" class="card"></div>
+	<div id="card2" class="card"></div>
+	<div id="card3" class="card"></div>
+	<div id="card4" class="card"></div>
+	<div id="card5" class="card"></div>
+
+</body>
+
+</html>
