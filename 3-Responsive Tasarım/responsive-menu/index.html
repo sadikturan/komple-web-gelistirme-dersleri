@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Responsive Menu</title>
+	<style>
+		body,
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		#navbar ul {
+			list-style: none;
+
+		}
+
+		#navbar ul li {
+			float: left;
+			padding: 15px 20px;
+		}
+
+		#navbar ul li a {
+			text-decoration: none;
+			color: #000;
+		}
+
+
+		@media screen and (max-width:800px) {
+			#icon {
+				display: block;
+				height: 40px;
+				width: 100%;
+				background: url(menu.png) no-repeat 98% center;
+				background-color: #404040;
+				cursor: pointer;
+			}
+
+			#navbar ul {
+				background: #505050;
+				height: 0;
+			}
+
+			#navbar ul.open {
+				height: auto;
+			}
+
+			#navbar ul li {
+				float: none;
+				border: 1px solid #404040;
+			}
+
+			#navbar ul li a {
+				color: #fff;
+				padding: 5px;
+			}
+
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<a id="icon"></a>
+
+	<div id="navbar">
+
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">News</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">References</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+	<img style="width:100%;" src="https://static.pexels.com/photos/635255/pexels-photo-635255.jpeg">
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			$("#icon").click(function() {
+				$("#navbar ul").toggleClass("open");
+			});
+
+		});
+
+	</script>
+
+</body>
+
+</html>

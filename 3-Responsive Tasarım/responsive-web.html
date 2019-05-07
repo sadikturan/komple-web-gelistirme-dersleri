@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Web</title>
+    <meta name="viewport" content="width=device-width">  
+      
+    <style>   
+       
+        *{
+            box-sizing: border-box;
+        }
+        
+        .box{
+            width: 25%;
+            height: 250px;
+            background: yellow;
+            float: left;
+            border: 1px solid blue;
+        }
+        
+        
+        @media screen and (max-width:700px)
+        {
+            .box{
+                width: 50%;              
+            }
+        }
+        
+        @media screen and (max-width:400px)
+        {
+            .box{
+                width: 100%;              
+            }
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+   
+     
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       
+    
+</body>
+</html>
