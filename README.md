@@ -8,17 +8,17 @@ Web geliştirme alanıyla daha önceden ilgilenip ilgilenmediğiniz bizim için 
 
 Kursumuz sıfırdan ileri seviyeye kadar bir web geliştiricinin bilmesi gereken tüm konuların yer aldığı, piyasadaki en kapsamlı ve en güncel kurs olduğunu bilmenizi isterim.
 
-Kursumuzdaki konu başlıkları sırasıyla;** Html 5, Css, Sass & Scss, Flexbox, Javascript, Bootstrap 4, JQuery, Asp.Net Mvc ve Asp.Net Core Mvc** konu başlıklarıdır.
+Kursumuzdaki konu başlıkları sırasıyla; **Html 5, Css, Sass & Scss, Flexbox, Javascript, Bootstrap 4, JQuery, Asp.Net Mvc ve Asp.Net Core Mvc** konu başlıklarıdır.
 
-Peki neden Web Geliştirici Kursuna İhtiyaç Duyalım ;
+**Peki neden Web Geliştirici Kursuna İhtiyaç Duyalım ;**
 
-Ciddi iş potansiyeline sahip olan bu alanda kendinizi geliştirip iyi bir kariyer sahibi olabilirsiniz.
+- Ciddi iş potansiyeline sahip olan bu alanda kendinizi geliştirip iyi bir kariyer sahibi olabilirsiniz.
 
-Freelancer olarak çalışıp kendi müşterilerinize hizmet sunabilirsiniz.
+- Freelancer olarak çalışıp kendi müşterilerinize hizmet sunabilirsiniz.
 
-Kurumsal bir firmada iyi bir ücret karşılığında çalışabilirsiniz.
+- Kurumsal bir firmada iyi bir ücret karşılığında çalışabilirsiniz.
 
-Hayal ettiğiniz projeleri gerçekleştirme fırsatına sahip olabilirsiniz.
+- Hayal ettiğiniz projeleri gerçekleştirme fırsatına sahip olabilirsiniz.
 
 Kurs programı web geliştirici alanıyla uğraşmaya başlamış ancak neyi ne zaman öğrenmesi gerektiğini bilmeyen ya da bu alanla ilgili hiç bir fikri olmayan kişileri göz önüne alarak sıfırdan özenle hazırlanmıştır.
 
