@@ -1,5 +1,7 @@
 # Komple Uygulamalı Web Geliştirme Eğitimi | 2019
 
+**Python Kursu: Baştan Sona Programlama Eğitimi kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/komple-web-developer-kursu/?couponCode=GITHUB27 "tıklayınız.")**
+
 Yayınlandığı ilk günden beri **Udemy yazılım geliştirme kategorisinin en iyi 3 kursu içerisinde en yüksek değerlendirme oranına sahip** olduğumuzu bilmenizi isterim.
 
 Bu başarının nedeni şüphesiz ki; **sürekli güncel kalan bir kurs olmamız** ve web geliştirme alanıyla alakalı **en önemli ve en gerekli konuları sadece bir kursta yalın ve net bir şekilde** öğreniyor olmanızdır.
