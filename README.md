@@ -1,6 +1,6 @@
 # Komple Uygulamalı Web Geliştirme Eğitimi | 2019
 
-**Komple Uygulamalı Web Geliştirme Eğitimi kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/komple-web-developer-kursu/?couponCode=GITHUB27 "tıklayınız.")**
+**Komple Uygulamalı Web Geliştirme Eğitimi kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1 "tıklayınız.")**
 
 Yayınlandığı ilk günden beri **Udemy yazılım geliştirme kategorisinin en iyi 3 kursu içerisinde en yüksek değerlendirme oranına sahip** olduğumuzu bilmenizi isterim.
 
@@ -58,4 +58,4 @@ yapabiliyor olacaksınız.
 
 Zaman kaybetmeden bu kursa dahil olup bir web geliştiricinin bilmesi gereken en güncel ve en temel konuları planlı bir şekilde öğrenin...!
 
-**Komple Uygulamalı Web Geliştirme Eğitimi kursumuza indirimli katılmak için** [tıklayınız.](https://www.udemy.com/komple-web-developer-kursu/?couponCode=GITHUB27 "tıklayınız.")
+**Komple Uygulamalı Web Geliştirme Eğitimi kursumuza indirimli katılmak için** [tıklayınız.](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1 "tıklayınız.")
