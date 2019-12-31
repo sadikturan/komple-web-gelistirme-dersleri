@@ -48,4 +48,5 @@ yapabiliyor olacaksınız.
 **Zaman kaybetmeden** **Komple Uygulamalı Web Geliştirme** kursumuza dahil olup bir web geliştiricinin bilmesi gereken **en güncel ve en temel** konuları planlı bir şekilde öğrenin...!
 
 **Komple Uygulamalı Web Geliştirme** kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1)
+
 **Komple Uygulamalı Web Geliştirme** yazılı dökümanlarını incelemek için [tıklayınız.]([https://sadikturan.com/komple-web-gelistirme-kursu](https://sadikturan.com/komple-web-gelistirme-kursu))
