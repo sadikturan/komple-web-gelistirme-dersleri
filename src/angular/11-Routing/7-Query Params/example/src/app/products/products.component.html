@@ -1,0 +1,20 @@
+<ul class="list-group">
+  <li *ngFor="let p of products" class="list-group-item">
+    {{p.name}}
+    <a [routerLink]="['/products',p.id]">detay</a>
+  </li>
+</ul>
+<p class="mt-4">
+
+  <a class="btn btn-primary" 
+    routerLink="/products"
+    [queryParams]="{page:1, order: 'bestselling'}"
+    >En Çok Satanlar</a>
+
+  <a class="btn btn-primary ml-2" 
+    [queryParams]="{page:1, order: 'newest'}"
+    routerLink="/products">En Yeni Ürünler</a>
+
+  <button (click)="loadProducts()" class="btn btn-primary ml-2">Sayfayı Yenile</button>
+
+</p>

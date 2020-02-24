@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="m-3">
+                <div class="bg-info text-white mt-2 p-2">
+                    {{ jsonProduct }}
+                </div>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input [(ngModel)]="newProduct.name" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea [(ngModel)]="newProduct.description" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Price</label>
+                    <input [(ngModel)]="newProduct.price" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Image Url</label>
+                    <input [(ngModel)]="newProduct.imageUrl" type="text" class="form-control">
+                </div>
+
+                <button (click)="addProduct(newProduct)" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

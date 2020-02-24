@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="m-3">
+                <div class="bg-info text-white my-2 p-2">
+                    {{ jsonProduct }}
+                </div>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input required minlength="3" maxlength="10" pattern="^[A-Za-z ]+$" [(ngModel)]="newProduct.name" name="name" #name="ngModel" type="text" class="form-control" (change)="log(name)">
+                    <div class="alert alert-danger" *ngIf="!name.valid && name.touched">
+                        <p *ngFor="let error of getValidationErrors(name)">
+                            {{ error }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea required [(ngModel)]="newProduct.description" name="pDescription" #description="ngModel" class="form-control"></textarea>
+                    <div class="alert alert-danger" *ngIf="!description.valid && description.touched">
+                        Description is required.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Price</label>
+                    <input required min="1000" max="5000" [(ngModel)]="newProduct.price" name="pPrice" #price="ngModel" type="text" class="form-control">
+                    <div class="alert alert-danger" *ngIf="!price.valid && price.touched">
+                        Price is required.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Image Url</label>
+                    <input required [(ngModel)]="newProduct.imageUrl" name="pImageUrl" #imageUrl="ngModel" type="text" class="form-control">
+                    <div class="alert alert-danger" *ngIf="!imageUrl.valid && imageUrl.touched">
+                        Image is required.
+                    </div>
+                </div>
+
+                <button (click)="addProduct(newProduct)" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

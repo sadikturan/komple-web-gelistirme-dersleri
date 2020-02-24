@@ -1,0 +1,54 @@
+<div class="container m-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="bg-info text-white p-2" *ngIf="selectedProduct">
+        Selected Product: {{ selectedProduct.name || '(None)' }}
+      </div>
+      <table class="table table-sm table-bordered mt-2">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th style="width: 150px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products"              
+            [class.bg-info]="getSelected(product)">
+            <td>{{ product.id }}</td>
+            <td>
+              <img src="/assets/img/{{ product.imageUrl }}" width="80">
+            </td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+              <button class="btn btn-danger btn-sm">Delete</button>
+              <button (click)="editProduct(product)" class="btn btn-primary btn-sm ml-2">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6" *ngIf="selectedProduct">
+      <div class="form-group">
+        <label>Product Name</label>
+        <input [(ngModel)]="selectedProduct.name" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <input [(ngModel)]="selectedProduct.price"  type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Image</label>
+        <input [(ngModel)]="selectedProduct.imageUrl"  type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea [(ngModel)]="selectedProduct.description"  type="text" class="form-control"></textarea>
+      </div>
+      <button class="btn btn-primary" (click)="SaveChanges()">Save Changes</button>
+    </div>
+  </div>
+</div>

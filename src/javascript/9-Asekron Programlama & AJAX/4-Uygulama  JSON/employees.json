@@ -1,0 +1,22 @@
+[
+
+    {
+        "firstName" : "Sena",
+        "lastName" : "Turan",
+        "age" : 19,
+        "retired" : false
+    },
+    {
+        "firstName" : "Çınar",
+        "lastName" : "Turan",
+        "age" : 1,
+        "retired" : false
+    },
+    {
+        "firstName" : "Ahmet",
+        "lastName" : "Turan",
+        "age" : 55,
+        "retired" : true
+    }
+
+]

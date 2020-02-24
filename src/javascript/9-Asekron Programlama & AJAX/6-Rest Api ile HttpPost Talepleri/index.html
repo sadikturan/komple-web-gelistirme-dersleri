@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+
+<body>
+
+	<div class="container mt-2">
+		<div class="row">
+			<div class="col">
+				<form>
+					<div class="input-group mb-3">
+						<input type="text" id="postid" class="form-control" aria-describedby="getData">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button" id="getOne">Get One</button>
+							<button class="btn btn-success" type="button" id="getAll">Get All</button>
+							<button class="btn btn-warning" type="button" id="postData">Post</button>
+						</div>
+					</div>
+				</form>
+
+				<div id="loading">
+					<img src="loading.gif" alt="" width="100">
+				</div>
+
+				<div id="results">
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

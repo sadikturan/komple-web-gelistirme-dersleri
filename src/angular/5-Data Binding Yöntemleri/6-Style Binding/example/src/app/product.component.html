@@ -1,0 +1,21 @@
+<div class="bg-primary text-white m-2 p-2">
+    There are {{ model.getProducts().length }} products in the repository.
+</div>
+
+<div [class]="getClasses(1)">
+    katalogdaki ilk ürün {{ model.getProductById(1).name }}
+</div>
+
+<div [class]="getClasses(2)">
+    katalogdaki ikinci ürün {{ model.getProductById(2).name }}
+</div>
+
+<button class="btn btn-primary" [class.disabled]="disabled">Submit</button>
+
+<div class="m-2 p-2" [ngClass]="getClassMap(1)">
+    katalogdaki <span [style.color]="color"> ilk ürün</span> {{ model.getProductById(1).name }}
+</div>
+
+<div class="m-2 p-2" [ngClass]="getClassMap(2)">
+    katalogdaki <span [ngStyle]="getStyles(2)">ikinci ürün</span> {{ model.getProductById(2).name }}
+</div>

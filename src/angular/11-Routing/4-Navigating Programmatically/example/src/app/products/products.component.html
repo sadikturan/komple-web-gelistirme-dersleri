@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <li *ngFor="let p of products" class="list-group-item">
+    {{p.name}}
+  </li>
+</ul>
+<p>
+  <a routerLink="products">products</a>
+  <button (click)="loadProducts()" class="btn btn-primary">Sayfayı Yenile</button>
+
+</p>

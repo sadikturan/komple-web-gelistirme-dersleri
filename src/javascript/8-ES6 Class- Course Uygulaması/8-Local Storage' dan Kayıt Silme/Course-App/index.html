@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Course App</title>
+  </head>
+  <body>  
+
+    <div class="container mt-3">
+        <h1>Course App</h1>
+        <hr>
+        <div class="row">
+            
+            <div class="col-md-5">
+                <form id="new-course">
+                    <div class="form-group">
+                        <label for="title">Course Title</label>
+                        <input type="text" class="form-control" id="title">    
+                    </div>
+                    <div class="form-group">
+                        <label for="instructor">Instructor</label>
+                        <input type="text" class="form-control" id="instructor">    
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="text" class="form-control" id="image">    
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+
+            </div>
+            <div class="col-md-7 mt-4">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Instructor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="course-list">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+    <script src="appES6.js"></script>
+  </body>
+</html>

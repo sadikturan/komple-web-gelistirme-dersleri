@@ -1,0 +1,9 @@
+<ul class="list-group m-5">
+    <li *ngFor="let product of model.getProducts(); index as i; first as isFirst; last as isLast; odd as isOdd; even as isEven;" class="list-group-item">
+        {{ i+1 }} - {{ product.name }} 
+        <span *ngIf="isFirst" class="badge badge-primary">first item</span>
+        <span *ngIf="isLast" class="badge badge-success">last item</span>
+        <span *ngIf="isOdd" class="badge badge-danger">odd item</span>
+        <span *ngIf="isEven" class="badge badge-warning">even item</span>
+    </li>
+</ul>

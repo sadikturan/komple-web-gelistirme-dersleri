@@ -1,0 +1,10 @@
+<div class="m-5">
+    <button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+    <ul class="list-group mt-2">
+        <li *ngFor="let product of model.getProducts();" class="list-group-item">
+            {{ product.name }}
+            <button class="btn btn-danger" (click)="deleteProduct(product)">Delete</button>
+            <button class="btn btn-warning" (click)="updateProduct(product)">Update</button>
+        </li>
+    </ul>
+</div>

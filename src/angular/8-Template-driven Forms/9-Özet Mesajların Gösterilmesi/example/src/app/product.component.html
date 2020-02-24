@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="m-3">
+                <form novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+
+                    <div class="bg-danger text-white p-3 my-2" *ngIf="formSubmitted && form.invalid">
+                        Bir hata oluştu. Bilgilerinizi kontrol ediniz.
+                        <ul>
+                            <li *ngFor="let error of getFormValidationErrors(form)">
+                                {{ error }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-info text-white my-2 p-2">
+                        {{ jsonProduct }}
+                    </div>
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input required minlength="3" maxlength="10" pattern="^[A-Za-z ]+$"
+                            [(ngModel)]="newProduct.name" name="name" #name="ngModel" type="text" class="form-control"
+                            (change)="log(name)">
+                        <div class="alert alert-danger" *ngIf="(formSubmitted || name.dirty) && name.invalid">
+                            <ul>
+                                <li *ngFor="let error of getValidationErrors(name)">
+                                    {{ error }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea required [(ngModel)]="newProduct.description" name="description"
+                            #description="ngModel" class="form-control"></textarea>
+                            <div class="alert alert-danger" *ngIf="(formSubmitted || description.dirty) && description.invalid">
+                                    <ul>
+                                        <li *ngFor="let error of getValidationErrors(description)">
+                                            {{ error }}
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input required min="1000" max="5000" [(ngModel)]="newProduct.price" name="price"
+                            #price="ngModel" type="text" class="form-control">
+                            <div class="alert alert-danger" *ngIf="(formSubmitted || price.dirty) && price.invalid">
+                                    <ul>
+                                        <li *ngFor="let error of getValidationErrors(price)">
+                                            {{ error }}
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Image Url</label>
+                        <input required [(ngModel)]="newProduct.imageUrl" name="imageUrl" #imageUrl="ngModel"
+                            type="text" class="form-control">
+                            <div class="alert alert-danger" *ngIf="(formSubmitted || imageUrl.dirty) && imageUrl.invalid">
+                                    <ul>
+                                        <li *ngFor="let error of getValidationErrors(imageUrl)">
+                                            {{ error }}
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

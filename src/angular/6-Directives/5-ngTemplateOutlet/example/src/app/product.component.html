@@ -1,0 +1,19 @@
+
+<ng-template 
+    [ngTemplateOutlet]="productList" 
+    [ngTemplateOutletContext]="{products: model.getProducts() }"></ng-template>
+
+    <ng-template 
+    [ngTemplateOutlet]="productList"
+    [ngTemplateOutletContext]="{products: model.getProducts() }">
+</ng-template>
+
+<ng-template #productList let-products="products" >
+    <div class="m-5">
+        <ul class="list-group mt-2">
+            <li *ngFor="let product of products;" class="list-group-item">
+                {{ product.name }}
+            </li>
+        </ul>
+    </div>
+</ng-template>
