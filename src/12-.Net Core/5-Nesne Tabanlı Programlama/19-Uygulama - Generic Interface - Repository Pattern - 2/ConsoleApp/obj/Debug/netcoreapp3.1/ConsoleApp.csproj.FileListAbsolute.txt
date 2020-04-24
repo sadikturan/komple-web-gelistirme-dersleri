@@ -1,0 +1,22 @@
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.exe
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.deps.json
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.json
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.dev.json
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\sadikturan\Desktop\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.pdb
+C:\Users\sadikturan\Desktop\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csprojAssemblyReference.cache
+C:\Users\sadikturan\Desktop\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\sadikturan\Desktop\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfo.cs
+C:\Users\sadikturan\Desktop\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\sadikturan\Desktop\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.pdb
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.exe
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.deps.json
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.json
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.dev.json
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.dll
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.pdb
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csprojAssemblyReference.cache
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfoInputs.cache
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfo.cs
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.dll
+E:\OneDrive\kurslar\komple web geliştirme\update\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.pdb
