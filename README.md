@@ -2,6 +2,8 @@
 # Komple Uygulamalı Web Geliştirme Eğitimi | 2020
 Komple Uygulamalı Web Geliştirme Eğitimi kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1)
 
+**Telegram grubuna** katılmak için [tıklayınız.](https://t.me/joinchat/PmV2Xhw1ZaeIq9EINxJNvg)
+
 Sıfırdan ileri seviyeye 'Web Geliştirme': Html, Css, Sass, Flexbox, Javascript, Bootstrap,JQuery,Asp.Net Mvc ve Core Mvc
 
 Yayınlandığı tarihten beri **Udemy'nin en iyi 3 kursu** içerisinde **en yüksek değerlendirme oranı**na sahip olduğumuzu bilmenizi isterim. Bu başarının nedeni şüphesiz ki; sürekli güncel kalan bir kurs olmamız ve web geliştirme alanıyla alakalı en önemli ve en gerekli konuları sadece bir kursta **yalın** ve **net** bir şekilde öğreniyor olmanızdır.
