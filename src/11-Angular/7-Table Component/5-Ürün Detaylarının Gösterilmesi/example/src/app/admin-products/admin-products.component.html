@@ -15,8 +15,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let product of products"              
-            [class.bg-info]="getSelected(product)">
+          <tr *ngFor="let product of products" [class.bg-info]="getSelected(product)">
             <td>{{ product.id }}</td>
             <td>
               <img src="/assets/img/{{ product.imageUrl }}" width="80">
@@ -34,19 +33,23 @@
     <div class="col-md-6">
       <div class="form-group">
         <label>Product Name</label>
-        <input #pName [value]="selectedProduct.name" (keyup.enter)="selectedProduct=pName.value" type="text" class="form-control">
+        <input #pName [value]="selectedProduct.name" (keyup.enter)="selectedProduct.name=pName.value" type="text"
+          class="form-control">
       </div>
       <div class="form-group">
         <label>Price</label>
-        <input #pPrice [value]="selectedProduct.price" (keyup.enter)="selectedProduct=pPrice.value" type="text" class="form-control">
+        <input #pPrice [value]="selectedProduct.price" (keyup.enter)="selectedProduct.price=pPrice.value" type="text"
+          class="form-control">
       </div>
       <div class="form-group">
         <label>Image</label>
-        <input #pImageUrl [value]="selectedProduct.imageUrl" (keyup.enter)="selectedProduct=pImageUrl.value" type="text" class="form-control">
+        <input #pImageUrl [value]="selectedProduct.imageUrl" (keyup.enter)="selectedProduct.imageUrl=pImageUrl.value"
+          type="text" class="form-control">
       </div>
       <div class="form-group">
         <label>Description</label>
-        <textarea #pDescription [value]="selectedProduct.description" (keyup.enter)="selectedProduct=pDescription.value" type="text" class="form-control"></textarea>
+        <textarea #pDescription [value]="selectedProduct.description"
+          (keyup.enter)="selectedProduct.description=pDescription.value" type="text" class="form-control"></textarea>
       </div>
     </div>
   </div>
