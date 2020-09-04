@@ -1,0 +1,53 @@
+<div class="container m-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="bg-info text-white p-2">
+        Selected Product: {{ selectedProduct.name || '(None)' }}
+      </div>
+      <table class="table table-sm table-bordered mt-2">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th style="width: 150px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products"              
+            [class.bg-info]="getSelected(product)">
+            <td>{{ product.id }}</td>
+            <td>
+              <img src="/assets/img/{{ product.imageUrl }}" width="80">
+            </td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+              <button class="btn btn-danger btn-sm">Delete</button>
+              <button (click)="editProduct(product)" class="btn btn-primary btn-sm ml-2">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Product Name</label>
+        <input #pName [value]="selectedProduct.name" (keyup.enter)="selectedProduct=pName.value" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <input #pPrice [value]="selectedProduct.price" (keyup.enter)="selectedProduct=pPrice.value" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Image</label>
+        <input #pImageUrl [value]="selectedProduct.imageUrl" (keyup.enter)="selectedProduct=pImageUrl.value" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea #pDescription [value]="selectedProduct.description" (keyup.enter)="selectedProduct=pDescription.value" type="text" class="form-control"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
