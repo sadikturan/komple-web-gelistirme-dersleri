@@ -1,5 +1,5 @@
 
-# Komple Uygulamalı Web Geliştirme Eğitim
+# Komple Uygulamalı Web Geliştirme Eğitimi
 Komple Uygulamalı Web Geliştirme Eğitimi kursumuzu incelemek için [tıklayınız.](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1)
 
 **Telegram grubuna** katılmak için [tıklayınız.](https://t.me/sadikturancom)
