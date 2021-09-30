@@ -1,0 +1,9 @@
+Uygulama 2:
+
+* "movie-app/uygulama-2" klasörünü oluşturunuz.
+* "en-iyi-filmler.html" isminde dosya ekleyiniz.
+* Sayfayı özetleyen uygun bir başlık ve açıklama ekleyiniz.
+* Sayfa açıklamasında önemli kısımlar için biçimlendirme etiketleri kullanınız.
+* Aşağıdaki linkte verilen en popüler 3 filmi uygun etiketlerle listeleyiniz.
+
+https://www.beyazperde.com/filmler/tum-filmleri/kullanici-puani/

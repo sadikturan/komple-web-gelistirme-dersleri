@@ -1,0 +1,24 @@
+Uygulama 1:
+
+* "movie-app/uygulama-1" klasörünü oluşturunuz.
+* "yuzuklerin-efendisi-yuzuk-kardesligi.html" isminde dosya ekleyiniz.
+* Html5 standardına uygun bir html içeriği ekleyiniz.
+* Sayfa başlığını "Yüzüklerin Efendisi: Yüzük Kardeşliği" olarak tanımlayınız.
+* Sayfa içeriği için aşağıdaki bilgileri kullanınız.
+** Seo için meta etiketlerini araştırıp kullanınız.
+
+
+Başlık: Yüzüklerin Efendisi: Yüzük Kardeşliği
+
+Yönetmen: Peter Jackson
+
+Özet: İyiyle kötü arasındaki mücadelenin epik bir anlatımı olan filmde, muazzam bir 
+sorumluluğu üstlenmek zorunda kalan ve barışçı bir Hobbit olan Frodo Baggins'in destansı 
+serüveni işleniyor. Frodo'nun yapması gereken, Kıyamet'in Çatlakları olarak anılan 
+diyara dalarak epik bir mücadeleye girişmek ve bu yüzüğü ebediyen ortadan kaldırmaktır. 
+Neyse ki yalnız çıkmayacaktır bu zorlu yolculuğa: Gandalf'ın yanısıra, bir elf olan 
+Legolas, cüce Gimli; izci Aragorn, savaşçı Boromir ve Frodo'nun kendisi gibi Hobbit olan 
+üç arkadaşı Merry, Pippin ve Samwise da onunla gelirler. Dağlar, ormanlar, kar, kaleler, 
+nehirler ve ovalar boyunca, karşılarına çıkan şeytani güçlere karşı savaşarak ilerler 
+bu grup. Yüzüğü yoketme görevini yerine getirerek, Karanlık Lordlar hükümranlığını 
+içinde bulundukları gerçeklikten silmektir amaçları...
