@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .element {
+            background-color: yellow;
+            animation: bounceIn;
+            animation-duration: 2s;
+        }
+
+        .animate__animated.animate__bounce {
+            --animate-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__bounce animate__infinite">An animated element</h1>
+    <div class="animate__animated animate__fadeInDown animate__delay-2s"></div>
+    <div class="element"></div>
+</body>
+</html>

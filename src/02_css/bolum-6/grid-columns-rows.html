@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+
+            /* grid-template-columns: 150px 250px 400px 150px; */
+            /* grid-template-columns: 150px auto 200px auto; */
+            /* grid-template-columns: auto auto 20%; */
+            /* grid-template-columns: repeat(3, auto); */
+            /* grid-template-columns: repeat(4, 200px); */
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 2fr;
+
+            grid-auto-rows: 3fr;
+
+            background-color: #034f84;
+
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f7786b;
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+        <div class="item">item 4</div>
+    </div>
+</body>
+</html>

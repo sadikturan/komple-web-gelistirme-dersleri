@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .box {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+
+            position: relative;
+            top: 0;
+            left: 0;
+
+            animation: a1 5s forwards ease-in;
+
+        }
+
+        @keyframes a1 {
+            25% {
+                top: 100px;
+                left: 0;
+                background-color: aqua;
+            }
+            50% {
+                top: 100px;
+                left: 100px;
+                background-color: goldenrod;
+            }
+            75% {
+                top: 200px;
+                left: 100px;
+                background-color: brown;
+            }
+            100% {
+                top: 200px;
+                left: 200px;
+                background-color: cadetblue;
+            }
+        }
+
+        h1 {
+            position: relative;
+            animation: text_animation 1s forwards ease-in;
+        }
+
+        @keyframes text_animation {
+            from {
+                left: -300px;
+            }
+            to {
+                left: 100px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <div class="box"></div>
+</body>
+</html>

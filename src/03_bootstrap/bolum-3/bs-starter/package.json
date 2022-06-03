@@ -1,0 +1,17 @@
+{
+  "name": "bs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss/ -o css/ --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "fslightbox": "^3.3.1",
+    "node-sass": "^7.0.1"
+  }
+}
