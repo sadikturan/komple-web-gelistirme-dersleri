@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="container my-3">
+       <div class="row"></div>
+   </div>
+
+   <script>
+       function displayCountry(country) {
+            const request = new XMLHttpRequest();
+
+            request.open('GET', 'https://restcountries.com/v3.1/name/' + country);
+            request.send();
+
+            request.addEventListener('load', function() {
+                const data = JSON.parse(this.responseText);
+                console.log(data);            
+                setCountry(data);
+
+                const countries = data[0].borders.toString();
+
+                // load neighbors
+                const req = new XMLHttpRequest();
+                req.open('GET', 'https://restcountries.com/v3.1/alpha?codes=' + countries);
+                req.send();
+
+                req.addEventListener('load', function() {
+                    const data = JSON.parse(this.responseText);
+                    setCountry(data);
+                });
+            });
+       }
+
+       function setCountry(data) {
+            for(let country of data) {            
+                const html = `
+                        <div class="col-3">
+                            <div class="card h-100">
+                                <img src="${country.flags.png}" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">${country.name.common}</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Population: ${(country.population / 1000000).toFixed(1)} </li>
+                                    <li class="list-group-item">Capital: ${country.capital[0]} </li>
+                                    <li class="list-group-item">Language: ${Object.values(country.languages)} </li>
+                                </ul>
+                            </div>
+                        </div>
+                `;
+
+                document.querySelector(".container .row").insertAdjacentHTML("beforeend", html);
+            }
+       }
+   
+   
+       displayCountry("italy");
+   
+   </script>
+    
+</body>
+</html>
