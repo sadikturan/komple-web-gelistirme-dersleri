@@ -71,3 +71,24 @@ for(let ogrenci of ogrenciler) {
 }
 
 // tüm öğrencilerin not ortalaması kaçtır?
+let ogrenci_ortalamalar = [];
+for(let ogrenci of ogrenciler) {
+
+    let not_toplam = 0;
+    let ortalama = 0;
+    let adet = 0;
+    for(let not of ogrenci.notlar) {
+        not_toplam += not;
+        adet++;
+    }
+    ortalama = not_toplam / adet;
+    ogrenci_ortalamalar.push(ortalama);
+}
+
+let not_toplam = 0;
+for(ogr_ortalama of ogrenci_ortalamalar) {
+    not_toplam += ogr_ortalama;
+}
+
+console.log("sınıf ortalaması: ", not_toplam / ogrenci_ortalamalar.length);
+
