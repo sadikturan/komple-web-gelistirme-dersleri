@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Formlar</title>
 </head>
 <body>
-    
-
-    <form action="register.php">
-
-        <div>
-            <label for="name">Adınız</label>
-            <input type="text" id="name">
-        </div>
-        <div>
-            <label for="surname">Soyad</label>
-            <input type="text" id="surname">
-        </div>
-
-        <div>
-            <label for="parola">Parola</label>
-            <input type="password" id="parola">
-        </div>
-
-        <div>
-            <label for="intro">Kendini Anlat</label>
-            <textarea id="intro" cols="30"></textarea>
-        </div>
-        <div>
-            <p>En sevdiğin programlama dili: </p>
-            <input type="radio" id="html" name="programlama">
-            <label for="html">HTML</label>
-
-            <input type="radio" id="css" name="programlama">
-            <label for="css">CSS</label>
-
-            <input type="radio" id="javascript" name="programlama">
-            <label for="javascript">Javascript</label>
-        </div>
-
-        <div>
-            <p>En sevdiğin programlama dili: </p>
-            <input type="checkbox" id="html2">
-            <label for="html2">HTML</label>
-
-            <input type="checkbox" id="css2">
-            <label for="css2">CSS</label>
-
-            <input type="checkbox" id="javascript2">
-            <label for="javascript2">Javascript</label>
-        </div>
-
-        <div>
-            <label for="cities">Şehir</label>
-            <select id="cities">
-                <option value="41">Kocaeli</option>
-                <option value="34">İstanbul</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="eposta">Email</label>
-            <input type="email" id="eposta">
-        </div>
-
-        <div>
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
-        </div>
-
-        <button type="submit">Kaydet</button>
-        <button type="reset">Temizle</button>
-
-    </form>
-
-
+	
+	<form action="/Home/Register">
+		
+		<p>
+	        Ad <input type="text" name="ad" placeholder="adınızı giriniz" required>
+		</p>
+		
+		<p>
+	        Soyad <input type="text" name="soyad" placeholder="soyadınızı giriniz" required>
+		</p>
+		
+		<p>
+	        Eposta <input type="email" name="email" required>
+		</p>
+		
+		<p>
+	        Beni Hatırla <input type="checkbox" name="benihatirla">
+		</p>
+		
+		<p>
+	        Erkek <input type="radio" name="cinsiyet">
+	        Kadın <input type="radio" name="cinsiyet">
+		</p>
+		
+		<p>
+	        Hobiler <br>
+	        
+	        Sinema <input type="checkbox" name="hobi">
+	        Spor <input type="checkbox" name="hobi">
+	        Kitap Okumak <input type="checkbox" name="hobi">
+		</p>
+		
+		<p>
+			<select name="sehir">
+				<option>Kocaeli</option>
+				<option>İstanbul</option>
+				<option>Ankara</option>
+			</select>
+		</p>
+		
+		<p>
+			<select multiple name="sehirler">
+				<option>Kocaeli</option>
+				<option>İstanbul</option>
+				<option>Ankara</option>
+			</select>
+		</p>
+		
+		<input type="submit" value="Kaydet">
+		
+	</form>
+	
+	
+	
 </body>
 </html>
