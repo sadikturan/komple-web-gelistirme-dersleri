@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .box {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+
+            /* animation-name: a1;
+            animation-duration: 5s; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: forwards; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: ease-in; */
+
+            animation: a1 5s forwards 2s ease-in;
+
+        }
+
+        @keyframes a1 {
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

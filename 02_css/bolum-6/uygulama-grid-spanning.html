@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px
+        }
+
+        .header {
+            grid-column: 1 / span 3;
+            text-align: center;
+            background-color: red;
+        }
+
+        .content {
+            grid-column: 1 / span 2;
+        }
+
+        .footer {
+            grid-column: 1 / span 3;
+            background-color: red;
+        }
+
+        .box-1 {
+            grid-column: 1 / span 3;
+        }
+
+        .box-3 {
+            grid-column: 2 / span 2;
+        }
+
+        .header, .content, .sidebar, .box-1, .box-2,.box-3 {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h2>Page Header</h2>
+        </header>
+        <section class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure commodi animi modi voluptate, consequatur beatae optio officia. Architecto neque eius sequi nobis cum, aspernatur voluptates alias nemo consectetur, exercitationem quis!</p>
+        </section>
+        <section class="sidebar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <div class="box-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia maxime facere aperiam commodi vero sit magni aliquid nostrum impedit numquam ducimus eveniet, velit quo exercitationem rem? Cumque, id et?
+        </div>
+        <div class="box-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia maxime facere aperiam commodi vero sit magni aliquid nostrum impedit numquam ducimus eveniet, velit quo exercitationem rem? Cumque, id et?
+        </div>
+        <div class="box-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia maxime facere aperiam commodi vero sit magni aliquid nostrum impedit numquam ducimus eveniet, velit quo exercitationem rem? Cumque, id et?
+        </div>
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
