@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // ES5
+
+        // function selamlama() {
+        //     console.log("merhaba");
+        // }
+
+        var selamlamaES5 = function(isim) {
+            console.log("merhaba " + isim);
+        }
+        selamlamaES5("ali");
+
+        // ES6 - arrow function
+        // const selamlamaES6 = () => console.log("merhaba");
+        const selamlamaES6 = (isim) => { console.log("merhaba " + isim); }
+
+        selamlamaES6("ahmet");
+
+        // ES5
+        var toplamES5 = function(a, b) {
+            return a + b;
+        }
+
+        var sonuc = toplamES5(10,20);
+        console.log(sonuc);
+
+        // ES6
+        // const toplamES6 = (a,b) => a + b;
+        const toplamES6 = (a,b) => { return a + b };
+
+        sonuc = toplamES6(20, 50);
+        console.log(sonuc);
+
+        </script>
+
+</body>
+</html>

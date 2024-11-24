@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Todo App 
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <ul id="task-list" class="list-group list-group-flush">
+                        <li class="task list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" id="1" class="form-check-input">
+                                <label for="1" class="form-check-label">Görev 1</label>
+                            </div>
+                        </li>
+                        <li class="task list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" id="2" class="form-check-input">
+                                <label for="2" class="form-check-label">Görev 2</label>
+                            </div>
+                        </li>
+                        <li class="task list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" id="3" class="form-check-input">
+                                <label for="3" class="form-check-label">Görev 3</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+   
+
+    <script>
+        let sonuc;
+
+        ul = document.getElementById("task-list");
+
+        // // children, firstElementChild, lastElementChild
+        // // parentElement
+        // // nextElementSibling, previousElementSibling
+
+        sonuc = ul.children;
+        ul.children[0].children[0].children[0].checked = true; 
+        // sonuc = ul.firstElementChild;  
+        // sonuc = ul.lastElementChild;  
+
+        // sonuc = document.getElementById("title").parentElement;
+        // sonuc = document.querySelector(".task").nextElementSibling.nextElementSibling.previousElementSibling;
+
+        console.log(sonuc);
+    </script>
+
+</body>
+</html>

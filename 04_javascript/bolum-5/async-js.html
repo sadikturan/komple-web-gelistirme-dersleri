@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">save</button>
+
+    <script>
+
+        // sync
+        //    console.log(1); 
+        //    console.log(2); 
+        //    console.log(3); 
+
+
+        // async
+        console.log(1); 
+
+        setTimeout(() => {
+            console.log(2); 
+        }, 2000);
+        
+        console.log(3); 
+
+        document.getElementById("btn").addEventListener("click", () => {
+            console.log("saved");
+        });
+
+        // api
+
+        // callback, promise, asyc-await
+
+    </script>
+
+
+</body>
+</html>
