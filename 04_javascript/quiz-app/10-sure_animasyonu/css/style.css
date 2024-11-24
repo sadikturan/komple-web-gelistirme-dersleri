@@ -1,0 +1,130 @@
+.app-container {
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+#quiz-box #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.option-list {
+    padding: 18px 10px;
+}
+
+.option-list .option{
+    border: 1px solid #151D3B;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-list .option:hover{
+    color: #112B2C;
+    background: #FFD33D;
+}
+
+.option-list .option.correct {
+    color: #155724;
+    background: #d4edda;
+} 
+
+.option-list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+} 
+
+.option-list .option.disabled {
+    pointer-events: none;
+} 
+
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* score box */
+#score-box {
+    text-align: center;
+    padding: 30px;
+}
+
+#score-box i {
+    font-size: 90px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#score-box .score-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#button-box {
+    text-align: center;
+}
+
+#button-box, #quiz-box, #score-box {
+    display: none;
+}
+
+#button-box.active, #quiz-box.active, #score-box.active {
+    display: block;
+}
+
+/* kalan süre */
+.time {
+    display: flex;
+    align-items: center;
+    background: #155724;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.time .time-text {
+    font-size: 14px;
+}
+.time .time-second {
+    background: #FFD33D;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: 3px;
+    width: 25px;
+    text-align: center;
+}
+
+.btn-next {
+    opacity: 0;
+
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.btn-next.show {
+   opacity: 1;
+   transform: scale(1);
+}
+
+.time-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: #F0A500;
+}
