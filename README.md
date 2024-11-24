@@ -2,7 +2,7 @@
 
 Komple Uygulamalı Web Geliştirme Eğitimi kursumuzu incelemek için [tıklayınız](https://www.udemy.com/course/komple-web-developer-kursu/?referralCode=5D4498D410A2750305C1).
 
-Sıfırdan ileri seviyeye 'Web Geliştirme': Html, Css, Sass, Flexbox, Grid, Bootstrap, Javascript, React, Asp.net Core
+Sıfırdan ileri seviyeye 'Web Geliştirme': Html, Css, Sass, Flexbox, Grid, Bootstrap, Javascript, React, Asp.net Core.
 
 Yayınlandığı tarihten beri **Udemy'nin en iyi 3 kursu** içerisinde **en yüksek değerlendirme oranı**na sahip olduğumuzu bilmenizi isterim. Bu başarının nedeni şüphesiz ki; sürekli güncel kalan bir kurs olmamız ve web geliştirme alanıyla alakalı en önemli ve en gerekli konuları sadece bir kursta **yalın** ve **net** bir şekilde öğreniyor olmanızdır.
 
@@ -10,7 +10,7 @@ Yayınlandığı tarihten beri **Udemy'nin en iyi 3 kursu** içerisinde **en yü
 
 Kursumuz **sıfırdan ileri seviyeye kadar** bir **web geliştiricinin bilmesi gereken tüm konuların** yer aldığı, **piyasadaki en kapsamlı ve en güncel kurs** olduğunu bilmenizi isterim.
 
-Kursumuzdaki konu başlıkları sırasıyla; **Html**, **Css**, **Sass & Scss**, **Flexbox**, **Javascript**, **Bootstrap**, **JQuery**, **Asp.Net Mvc** ve **Asp.Net Core Mvc** konu başlıklarıdır.
+Kursumuzdaki konu başlıkları sırasıyla; **Html**, **Css**, **Scss**, **Flexbox**, **Grid**, **Bootstrap**, **Javascript**, **React** ve **Asp.Net Core.** konu başlıklarıdır.
 
 Peki neden Web Geliştirici Kursuna **İhtiyaç Duyalım ;**
 
