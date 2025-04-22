@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Admin</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="kategori.html" class="nav-link">Kategori</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="urun.html" class="nav-link">Ürün</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="slider.html" class="nav-link">Slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="role.html" class="nav-link">Role</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kullanici.html" class="nav-link">Kullanıcı</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="siparis.html" class="nav-link">Sipariş</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sadık Turan</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="hesabim.html" class="dropdown-item">Hesabım</a></li>
+                                <li><a href="#" class="dropdown-item">Çıkış</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active">Giriş</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header py-1">
+                        <h5 class="card-title">Login</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-danger">
+                            <i class="fa-solid fa-circle-exclamation"></i> Email ya da parola hatalı.
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="col-sm-2 col-form-label">Eposta</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-sm-2 col-form-label">Parola</label>
+                                <input type="password" id="password" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+      
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
