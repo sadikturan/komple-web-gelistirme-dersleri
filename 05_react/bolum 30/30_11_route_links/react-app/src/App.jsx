@@ -1,0 +1,17 @@
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import MovieDetails from "./pages/MovieDetails";
+
+const routes = createBrowserRouter([
+  { path: "/", element: <Home /> },
+  { path: "/movies", element: <Movies /> },
+  { path: "/movies/1", element: <MovieDetails /> },
+]);
+
+function App() {
+  return <RouterProvider router={routes} />;
+}
+
+export default App;

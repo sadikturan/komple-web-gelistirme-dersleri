@@ -1,0 +1,25 @@
+{
+  "workbench.colorTheme": "Visual Studio 2019 Dark",
+  "editor.fontSize": 17,
+  "window.zoomLevel": 0.7,
+  "terminal.integrated.fontSize": 17,
+  "emmet.includeLanguages": {
+    "razor":"html",
+    "javascript": "javascriptreact",
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "explorer.confirmDelete": false
+}
