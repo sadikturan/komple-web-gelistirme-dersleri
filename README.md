@@ -28,7 +28,7 @@ Bu eğitim sizi sıfırdan alıp, gerçek projeler geliştirerek **işe alınabi
 - React: Modern, bileşen tabanlı kullanıcı arayüzleri
 - ASP.NET Core: Güçlü ve güvenli backend geliştirme
 - RESTful API’ler: Veri alışverişi ve uygulamalar arası iletişim
-- Gerçek Projeler: E,Ticaret projesi, film projesi, blog sitesi, yönetim paneli, alışveriş sepeti uygulaması ve daha fazlası
+- Gerçek Projeler: E-Ticaret projesi, film projesi, blog sitesi, yönetim paneli ve çok daha fazlası
 
 👩‍💻 Bu Kurs Kimler İçin?
 
